@@ -1,0 +1,41 @@
+header {
+  background-color: #363636;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.chattix__title {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.chattix__description {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.chattix__connect {
+  color: #ee6c4d;
+  font-weight: 500;
+}
+
+.error__message {
+  position: relative;
+  bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 29em) {
+  .chattix__title {
+    font-size: 2.8rem;
+    position: relative;
+    top: 0.5rem;
+  }
+}

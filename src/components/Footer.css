@@ -1,0 +1,23 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+
+@media (max-width: 29em) {
+  .copy {
+    position: relative;
+    bottom: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .logout__button {
+    width: 8rem;
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+}

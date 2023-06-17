@@ -1,0 +1,55 @@
+.login__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+
+  height: 20rem;
+}
+.router__link {
+  text-decoration: none;
+}
+.login__input {
+  width: 40rem;
+  margin-bottom: 2rem;
+}
+.name__label {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.login__input:invalid ~ .error__message {
+  display: block;
+}
+
+.error__message {
+  font-size: 1.2rem;
+  padding: 3px;
+  color: #ff0033;
+  display: none;
+  position: relative;
+  bottom: 2rem;
+}
+
+@media (max-width: 29em) {
+  .login__input {
+    width: 70vw;
+  }
+
+  .login__button {
+    width: 12rem;
+    height: 5rem;
+  }
+
+  .error__message {
+    font-size: 1rem;
+  }
+
+  
+}

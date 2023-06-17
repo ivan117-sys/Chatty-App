@@ -1,0 +1,115 @@
+.text__container {
+  height: 10vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 4rem;
+}
+
+.button__no-style {
+  display: none;
+  visibility: hidden;
+}
+
+form {
+  width: 70vw;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  border: 2px solid #363636;
+  height: 6rem;
+  border-radius: 12px;
+  width: 40vw;
+  background-color: #d9dddc;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+input::placeholder {
+  font-size: 1.6rem;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #932d30;
+}
+
+input:active {
+  outline-color: #932d30;
+  border: none;
+}
+
+button {
+  width: 16rem;
+  border-radius: 8px;
+  height: 5rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: #932d30;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.4s;
+  font-family: "Varela Round", sans-serif;
+}
+
+button:hover {
+  background-color: #b76369;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.send__icon {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 26.25em) {
+  .send__button {
+    display: none;
+  }
+
+  .send__icon {
+    display: block;
+    visibility: visible;
+    font-size: 2.8rem;
+    color: #932d30;
+  }
+
+  .text__field {
+    width: 90vw;
+    margin: 1rem;
+  }
+  .button__no-style {
+    display: block;
+    visibility: visible;
+    background: none !important;
+    color: inherit !important;
+    border: none !important;
+    padding: 0 !important;
+    font: inherit !important;
+    cursor: pointer !important;
+    outline: inherit !important;
+    width: 15vw;
+    position: relative;
+    right: 1rem;
+  }
+
+  .text__container {
+    position: relative;
+    top: 5rem;
+    height: 5rem;
+  }
+
+  .input__form {
+    width: 100vw;
+  }
+}
